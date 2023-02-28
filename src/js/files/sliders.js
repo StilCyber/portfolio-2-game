@@ -57,17 +57,27 @@ function initSliders() {
 				disableOnInteraction: false,
 			},
 			*/
+         // scrollbarDraggable: true,
+         // scrollbar: '.swiper-scrollbar',
+         // scrollbarHide: true,
+         // OSEdgeSwipeDetection: true,
+
+        // mousewheel: false,
+
 			observer: true,
 			observeParents: true,
 			slidesPerView: 4,
 			spaceBetween: 20,
 			autoHeight: true,
 			speed: 800,
-			//touchRatio: 0,
-			//simulateTouch: false,
-			//loop: true,
+			// touchRatio: 5,
+         // touchMoveStopPropagation: false,
+			// simulateTouch: true,
+         // touchStartForcePreventDefault: true,
+			// loop: true,
 			//preloadImages: false,
 			//lazy: true,
+
 			// Dotts
 			pagination: {
 			   el: '.slider-quality__pagging',
@@ -75,6 +85,7 @@ function initSliders() {
             type: 'bullets',
             // dynamicBullets: true,
 			},
+        //  nested: true,
 			// Arrows
          /*
 			navigation: {
@@ -107,9 +118,17 @@ function initSliders() {
 			},
 			
 			on: {
+            
+            touchStart: function () {
+               
+               
+             },
 
 			}
+         
 		});
+      
+
 	}
 
 	if (document.querySelector('.rpg__slider')) {
