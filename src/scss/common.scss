@@ -1,0 +1,69 @@
+// Заголовки, общие БЄМ блоки и проче...
+
+// button
+
+.button {
+   &__link {
+      padding: 14px 30px;
+      background: $mainColor;
+      box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      color: #fff;
+      transition: 0.3s;
+      display: inline-block;
+      font-family: "Lato";
+      z-index: 10;
+      position: relative;
+      &:hover {
+         background: #0099ff;
+      }
+      &:active {
+         transform: scale(0.9);
+      }
+   }
+}
+._button-black {
+   color: $mainColor;
+   border: 1px solid $mainColor;
+      background: transparent;
+      &:hover {
+         background: rgba(0, 0, 0, 0.1);
+      }
+
+}
+// title and subtitle
+
+.info-promise {
+   color: #fff;
+   text-align: center;
+   text-transform: capitalize;
+
+   &__title {
+      font-weight: 700;
+      font-size: 39px;
+      line-height: 130%;
+
+      @include adaptiveValue('font-size', 39, 24);
+   }
+
+   &__subtitle {
+      line-height: 160%;
+      opacity: 0.7;
+      @include adaptiveValue('font-size', 16, 14);
+   }
+
+   & :not(:last-child) {
+      margin-bottom: rem(25);
+   }
+}
+
+._sale-margin {
+   & :not(:last-child) {
+      margin-bottom: rem(20);
+   }
+}
+
+// bullets
+
+
+
