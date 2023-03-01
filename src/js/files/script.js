@@ -13,5 +13,3 @@ videoMod.addEventListener('click', function (e) {
       videoMod.classList.remove('_pause');
   }
 });
-
-

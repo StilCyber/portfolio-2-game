@@ -19,7 +19,7 @@ EffectFade, Lazy, Manipulation
 // Базовые стили
 import "../../scss/base/swiper.scss";
 // Полный набор стилей из scss/libs/swiper.scss
-// import "../../scss/libs/swiper.scss";
+import "../../scss/libs/swiper.scss";
 // Полный набор стилей из node_modules
 // import 'swiper/css';
 
@@ -68,7 +68,7 @@ function initSliders() {
 			observeParents: true,
 			slidesPerView: 4,
 			spaceBetween: 20,
-			autoHeight: true,
+			// autoHeight: true,
 			speed: 800,
 			// touchRatio: 5,
          // touchMoveStopPropagation: false,
@@ -97,21 +97,25 @@ function initSliders() {
 				320: {
 					slidesPerView: 1,
 					spaceBetween: 0,
-					autoHeight: true,
+					// autoHeight: true,
 				},
 				472: {
 					slidesPerView: 1.5,
 					spaceBetween: 20,
 				},
-            596: {
+            654: {
+					slidesPerView: 2,
+					spaceBetween: 20,
+				},
+				754: {
 					slidesPerView: 2.5,
 					spaceBetween: 20,
 				},
-				768: {
+				998: {
 					slidesPerView: 3,
-					spaceBetween: 20,
+					spaceBetween: 30,
 				},
-				1347: {
+            1354: {
 					slidesPerView: 4,
 					spaceBetween: 30,
 				},
@@ -170,19 +174,19 @@ function initSliders() {
 				prevEl: '.swiper-button-prev',
 			},
          */
-			/*
+			
 			breakpoints: {
 				320: {
-					slidesPerView: 1,
-					spaceBetween: 0,
+					slidesPerView: 2,
+					spaceBetween: 15,
 					autoHeight: true,
 				},
 				472: {
-					slidesPerView: 1.5,
+					slidesPerView: 3,
 					spaceBetween: 20,
 				},
             596: {
-					slidesPerView: 2.5,
+					slidesPerView: 3,
 					spaceBetween: 20,
 				},
 				768: {
@@ -190,11 +194,11 @@ function initSliders() {
 					spaceBetween: 20,
 				},
 				1347: {
-					slidesPerView: 4,
+					slidesPerView: 3,
 					spaceBetween: 30,
 				},
 			},
-         */
+         
 			
 			on: {
 
